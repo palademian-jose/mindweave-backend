@@ -1,0 +1,10 @@
+name: mindweave-backend
+
+# This specifies that we use a Postgres database.
+databases:
+  db:
+    engine: postgres
+    # In local dev environment, we connect to local postgres
+    # The default Postgres DSN is: postgres://username:password@host:port/dbname?sslmode=disable
+    # We'll create a database named "mydb" shortly.
+    url: "postgres://postgres:postgres@localhost:5432/mindweave-db?sslmode=disable"
